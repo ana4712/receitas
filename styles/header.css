@@ -1,0 +1,41 @@
+/*header*/
+.cabecalho {
+   background-color: rgb(23, 139, 19);
+  padding: 12px;
+}
+
+.cabecalho ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.cabecalho a {
+  color: rgb(216, 212, 212);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+  margin: 10px;
+}
+
+.cabecalho a:hover {
+  opacity: 0.8;
+}
+
+/* Responsividade*/
+@media (max-width: 600px) {
+  .cabecalho ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cabecalho a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+}
+

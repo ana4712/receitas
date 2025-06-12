@@ -1,0 +1,113 @@
+/* corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  padding: 30px;
+  margin: 0;
+}
+
+/* titulo */
+h1 {
+  text-align: center;
+  color: rgb(23, 139, 19);
+  margin-bottom: 20px;
+}
+
+/* formulario */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* label */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* campos */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ingrediente */
+.ingrediente {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* botao */
+button {
+  margin-top: 20px;
+  background: rgb(23, 139, 19);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: rgb(46, 189, 33);
+  transform: translateY(-2px);
+}
+
+/* link voltar */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: rgb(23, 139, 19);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* mensagem de sucesso */
+.mensagem-sucesso {
+  color: rgb(23, 139, 19);
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  .ingrediente {
+    font-size: 13px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+}

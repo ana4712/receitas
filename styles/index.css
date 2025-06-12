@@ -1,0 +1,114 @@
+/* corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  margin: 0; /* removido o margin 20px */
+  padding: 20px;
+}
+
+/* título principal */
+h1 {
+  text-align: center;
+  color: rgb(23, 139, 19);
+}
+
+/* grid */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* card principal */
+.card {
+  width: 300px;
+  max-width: 90vw;
+  background: #f7f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* conteúdo do card */
+.card-content {
+  padding: 15px;
+}
+
+/* título do card */
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: rgb(23, 139, 19);
+}
+
+/* parágrafo do card */
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ingredientes */
+.ingredientes {
+  margin-top: 10px;
+}
+
+/* botões */
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.botoes a {
+  text-decoration: none;
+  background-color: rgb(23, 139, 19);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: rgb(46, 189, 33);
+  transform: translateY(-2px);
+}
+
+/* ------RESPONSIVIDADE------*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .botoes a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .botoes a {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
